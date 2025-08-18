@@ -1,1 +1,14 @@
 
+public class Addition {
+    public static void main(String[] args) {
+        int a = 2;
+        int b = 12;
+        int sum = a + b;
+
+        if (sum <= 20) {
+            System.out.println("Sum is: " + sum + " ay mababa");
+        } else {
+            System.out.println("Sum is: " + sum + " ay mataas");
+        }
+    }
+}
