@@ -1,1 +1,37 @@
+@Override
+protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.activity_main);
+    
+    Log.d("Lifecycle", "onCreate: Activity Created");
+}
 
+@Override
+protected void onStart() {
+    super.onStart();
+    Log.d("Lifecycle", "onStart: Activity Started and Visible");
+}
+
+@Override
+protected void onResume() {
+    super.onResume();
+    Log.d("Lifecycle", "onResume: Activity Resumed and Ready");
+}
+
+@Override
+protected void onPause() {
+    super.onPause();
+    Log.d("Lifecycle", "onPause: Activity Paused (Losing focus)");
+}
+
+@Override
+protected void onStop() {
+    super.onStop();
+    Log.d("Lifecycle", "onStop: Activity Stopped (Not Visible)");
+}
+
+@Override
+protected void onDestroy() {
+    super.onDestroy();
+    Log.d("Lifecycle", "onDestroy: Activity Destroyed");
+}
